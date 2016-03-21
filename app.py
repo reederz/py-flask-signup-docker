@@ -11,4 +11,4 @@ def whoop():
 if os.environ.get('DOTEST', '0') == '1':
     print 'tests passed'
 else:
-    app.run()
+    app.run(host='0.0.0.0', port=80)
